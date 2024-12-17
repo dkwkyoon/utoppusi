@@ -1,0 +1,167 @@
+<style>
+      @font-face {
+        font-family: 'Ownglyph_Binsu-Rg';
+        src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2406-1@1.0/Ownglyph_Binsu-Rg.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'Pretendard-Regular';
+        src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+      }
+
+       @font-face {
+        font-family: 'Pretendard-Bold';
+        src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+        font-weight: 700;
+        font-style: normal;
+      }
+
+
+
+        body {
+            font-family: 'Pretendard-Regular';
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000000;
+            position: relative;
+        }
+    
+    .image-container {
+            display: grid;
+            gap: 30px;
+            grid-template-rows: repeat(2, auto); 
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+            
+        }
+
+        .row:nth-child(1) {
+           padding-left: 60px;
+
+            gap: 200px;}
+
+        .row:nth-child(2) {
+            gap: 150px;
+            padding-right: 40px;
+        }
+
+
+        .image {
+    height: 200px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.image-container::before {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnM1N3Ftdnh3MjZ3djc1dXJweXFrenJua2ljZ2dsM2tsZ3k5dWwwOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/sWFYgYFjHGugleQdO7/giphy.webp);
+    background-position: center;
+     opacity:0.3; 
+    z-index: -1; 
+}
+
+
+        .image:hover {
+            transform: scale(1.1);
+        }
+
+        #random-text-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            z-index: 10;
+        }
+
+        .random-text-box {
+            background-color: white;
+            border: 1.3px black solid;
+            color: black;
+            padding: 15px;
+            border-radius: 5px;
+            position: absolute;
+            cursor: move;
+            max-width: 580px;  
+            max-height: 420px; 
+            overflow: auto;    
+            word-wrap: break-word; 
+            font-size: .9rem;
+            line-height: 1.56;
+            text-align: left;
+            word-break: keep-all;
+        }
+
+        .random-text-box .close-btn {
+            position: absolute;
+            top: 6px;
+            right: 6px; 
+            cursor: pointer;
+            font-size: .55rem;
+            background-color: maroon;
+            color: white;
+            border: none;
+            border-radius: 3px
+        }
+
+        .image-only-box {
+            position: absolute;
+            width: 260px; 
+            border: 1.3px solid black; 
+            padding: 8px;
+            border-radius: 5px;
+            background-color: white;
+            text-align: center;
+            cursor: grab; }
+        
+
+        .image-only-box img {
+            width: 100%;
+            height: auto;
+        }
+
+        .image-only-box:active {
+          cursor: grabbing;
+            }
+
+        .image-only-box .close-btn {
+            position: absolute;
+            top: 6px; 
+            right: 6px; 
+            cursor: pointer;
+            font-size: .55rem;
+            background-color: maroon;
+            color: white;
+            border: none;
+            border-radius: 3px
+        }
+
+        .song{
+  font-family: 'Ownglyph_Binsu-Rg';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.01rem;
+  line-height: 1.5;
+}
+
+    .hey {
+     font-family: 'Pretendard-Bold';;
+      font-weight: 700;
+      }
+
+    </style>
